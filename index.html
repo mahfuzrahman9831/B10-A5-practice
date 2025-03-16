@@ -102,23 +102,23 @@
                     <h3>Cats</h3>
                 </div> -->
             </div>
-            
+
 
         </section>
         <!-- adopt section end -->
 
         <!-- best deal section start -->
         <section class="w-11/12 mx-auto py-8">
-            <div class="flex justify-between">
+            <div class="flex justify-between my-8">
                 <h2 class="font-black text-2xl">Best Deal For you</h2>
                 <button class="btn bg-[#0E7A81] text-white rounded-lg px-6 py-6 ">Sort by Price</button>
             </div>
 
+            
+            <div class="flex gap-2">
+                <div id="all-category" class="w-3/4 border rounded-xl grid grid-row gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-            <div class="grid grid-row">
-                <div class="grid grid-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    <div class="card bg-base-100 shadow-sm">
-                        <figure class="px-5 pt-5">
+                    <!-- <figure class="px-5 pt-5">
                           <img
                             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                             alt="Shoes"
@@ -139,12 +139,15 @@
                             <button class="py-2 px-5 border rounded-md text-[#0E7A81] font-bold">Details</button>
                           </div>
                           
-                        </div>
-                      </div>
-    
+                        </div> -->
+
+
+                </div>
+                <div id="liked-container" class="liked-pets border rounded-xl  w-1/4">
+
                 </div>
             </div>
-            
+
 
         </section>
 
@@ -153,6 +156,26 @@
 
 
     </main>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button id="modalDetails" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box w-11/12 max-w-5xl max-h-5xl">
+           <div class="modal-container">
+
+           </div>
+            
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    
 
     <footer>
 
